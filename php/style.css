@@ -1,68 +1,42 @@
-html,
-            body {
-                height: 100%;
-            }
-    
-            body {
-                background:rgb(211, 88, 88);
-                /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right,rgb(201, 21, 21),rgb(226, 52, 52));
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right,rgb(68, 7, 7),rgb(165, 41, 41));
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                color: white;
-                  display: flex;
-                justify-content: center;
-                align-items:start;
-              
-                padding-top: 40px;
-                padding-bottom: 40px;
-              
-            }
-    
-            .form-signin {
-                width: 600px;
-                height:500px;
-               min-width: 330px;
-                padding: 15px;
-                margin: auto;
-                color: #212121;
-                border: 4px solid #ff993b;
-                border-radius: 25px;
-                display: flex;
-                justify-content: center;
-                align-items:start;
-                box-shadow:2px, 2px, 2px rgb(236, 226, 226);
-              
-            }
-    
-          form{
-
-              display: flex;
-                justify-content: center;
-                align-items:center;
-                flex-direction:column;
-                gap:30px;
-              
-          }
-.from-group{
-
-
-    width:100px;
-    outline:none;
+body {
+    background: linear-gradient(to right, #440707, #a52929);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 40px;
+    min-height: 100vh;
+    margin: 0;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    color: #ffcc70;
+}
 
-      .Input:hover
-      , .Input:focus {
-       
-        border: 2px solid #ff993b;
-        box-shadow:7px 7px 7px rgb(211, 131, 56);
-    outline: 2px solid orange;
-  } 
-  .Input{
-  border: 3px solid #ff993b;
-    width:100%;
-    height: 40px;
-  }
-  
+.table {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ff993b;
+    font-size: 1.2rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.table:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table span {
+    color: #ffcc70;
+    font-weight: bold;
+}
